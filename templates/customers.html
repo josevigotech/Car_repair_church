@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Clientes Registrados</title>
+</head>
+<body>
+    <h1>Registered Customers</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Problem</th>
+            <th>Car Brand</th>
+            <th>Car Model</th>
+            <th>Car Year</th>
+            <th>Request Prayer</th>
+        </tr>
+        {% for customer in customers %}
+        <tr>
+            <td><a href="/view_previous/{{ customer[0] }}">{{ customer[1] }}</a></td> <!-- Nombre con enlace -->
+            <td>{{ customer[2] }}</td> <!-- Teléfono -->
+            <td>{{ customer[3] }}</td> <!-- Correo -->
+            <td>{{ customer[4] }}</td> <!-- Género -->
+            <td>{{ customer[5] }}</td> <!-- Problema -->
+            <td>{{ customer[6] }}</td> <!-- Marca del Auto -->
+            <td>{{ customer[7] }}</td> <!-- Modelo del Auto -->
+            <td>{{ customer[8] }}</td> <!-- Año del Auto -->
+            <td>{{ 'Yes' if customer[9] else 'No' }}</td> <!-- Solicita Oración -->
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Enlace para regresar al formulario de registro -->
+    <br>
+    <a href="/">Return to registration form</a>
+</body>
+</html>
+
+  

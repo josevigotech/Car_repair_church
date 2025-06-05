@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Cliente</title>
+</head>
+<body>
+
+    <h1>Customer Details</h1>
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>{{ customer[1] }}</td> <!-- Nombre -->
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>{{ customer[2] }}</td> <!-- Teléfono -->
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ customer[3] }}</td> <!-- Correo -->
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>{{ customer[4] }}</td> <!-- Género -->
+        </tr>
+        <tr>
+            <th>Problem</th>
+            <td>{{ customer[5] }}</td> <!-- Problema -->
+        </tr>
+        <tr>
+            <th>Car Brand</th>
+            <td>{{ customer[6] }}</td> <!-- Marca del Auto -->
+        </tr>
+        <tr>
+            <th>Car Model</th>
+            <td>{{ customer[7] }}</td> <!-- Modelo del Auto -->
+        </tr>
+        <tr>
+            <th>Car Year</th>
+            <td>{{ customer[8] }}</td> <!-- Año del Auto -->
+        </tr>
+        <tr>
+            <th>Request Prayer</th>
+            <td>{{ 'Yes' if customer[9] else 'No' }}</td> <!-- Solicita Oración -->
+        </tr>
+    </table>
+
+    <!-- Enlace para regresar a la lista de clientes -->
+    <br>
+    <a href="/customers">Return registration form</a>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+CREATE DATABASE car_repair_db;
+USE car_repair_db;
+
+CREATE TABLE customers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    phone VARCHAR(255),
+    email VARCHAR(255),
+    gender VARCHAR(50),
+    problem TEXT,
+    car_brand VARCHAR(100),
+    car_model VARCHAR(100),
+    car_year INT,
+    wants_prayer BOOLEAN,
+    created_date DATE
+);
