@@ -8,8 +8,8 @@ app = Flask(__name__)
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="W7301@jqir#@",
-    database="car_repair_db"
+    password="",
+    database=""
 )
 cursor = db.cursor()
 
